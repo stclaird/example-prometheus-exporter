@@ -1,0 +1,15 @@
+version: '2.4'
+services:
+  s3_image_exporter:  
+    container_name: s3_image_exporter
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+    environment:
+        - AWS_REGION=eu-west-1
+        - AWS_REGION=eu-west-1
+        - ENV=development
+        - BUCKET_NAME=<YOUR-IMAGE-BUCKET>
+    ports:
+      - 20000:20000
