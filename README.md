@@ -1,6 +1,6 @@
 # S3 Bucket Exporter
 
-A very simple check to count the amount of files added to a bucket and path.
+A very simple example prometheus exporter that will  count the amount of files added to a particular S3 bucket and path. You might use this to check an uploads directory, to ensure that files are being processed correctly.   
 
 ## Build the executable
 
